@@ -177,6 +177,7 @@ public class SimpleCharacterControl : MonoBehaviour {
         {
             m_jumpTimeStamp = Time.time;
             m_rigidBody.AddForce(Vector3.up * m_jumpForce, ForceMode.Impulse);
+            
         }
 
         if (!m_wasGrounded && m_isGrounded)
